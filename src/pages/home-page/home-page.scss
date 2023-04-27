@@ -1,0 +1,25 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+///
+///
+
+@use "./components/faq-component/faq-component.scss";
+
+$_450: 450px;
+
+#home-page {
+  height: 100%;
+  background-color: var(--canvas-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 31px;
+}
+
+@media only screen and (max-width: $_450) {
+  #home-page {
+    padding: 111px 14px;
+  }
+}

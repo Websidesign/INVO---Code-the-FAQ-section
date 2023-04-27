@@ -1,0 +1,29 @@
+@use "./partials/faq-question-partial.scss";
+
+$_450: 450px;
+
+.faq-component {
+  max-width: 772px;
+  & &__title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 auto 40px;
+    max-width: 336px;
+  }
+}
+
+@media only screen and (max-width: $_450) {
+  .faq-component {
+    & &__title {
+      font-size: 24px;
+      max-width: 260px;
+      line-height: 1.2em;
+      margin-bottom: 30px;
+    }
+  }
+}
